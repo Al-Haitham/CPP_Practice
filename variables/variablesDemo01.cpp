@@ -7,21 +7,24 @@ int main(){
     string name;
     bool isOnline = true;
     string isON="OFF";
-    char score;
+    string score;
     string isExit;
     cout << "Your age: ";
     cin >> age;
+    cin.ignore();
     cout << "Your name: ";
-    cin >> name;
+    getline(cin,name);
     cout << "Your score: ";
     cin >> score;
+    cin.ignore();
     if (isOnline==true){
         isON="ON";
     };
-    cout << "User Status: " << isON << "\nYou're " << name << ", and you're " << age << " years old.\n Your score is " << score <<" !\n";
-    cout << "Exit? :";
+    cout << "--User Status: " << isON << "\n+You are " << name << ", and you are " << age << " years old.\n+Your score is " << score <<" !\n";
+    cout << "=> Exit? :";
     cin >> isExit;
     if (isExit=="yes"){
         isON="OFF";
     };
+    cout << "--User Status: " << isON <<"\n";
 }
