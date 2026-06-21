@@ -20,7 +20,7 @@ int main(){
     if (isOnline==true){
         isON="ON";
     };
-    cout << "--User Status: " << isON << "\n+You are " << name << ", and you are " << age << " years old.\n+Your score is " << score <<" !\n";
+    cout << "--User Status: " << isON << "\n+ You are " << name << ", and you are " << age << " years old.\n+ Your score is " << score <<" !\n";
     cout << "=> Exit? :";
     cin >> isExit;
     if (isExit=="yes"){
